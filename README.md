@@ -31,3 +31,27 @@ A fine-tuned BERT-based sentiment classifier built on the IMDB movie review data
 | 11 | **Gradio UI** | Launch an interactive web UI for real-time predictions |
  
 ---
+
+
+## Model Details
+ 
+| Property | Value |
+|----------|-------|
+| Base Model | `bert-base-uncased` |
+| Task | Binary Sentiment Classification |
+| Dataset | IMDB (Hugging Face) |
+| Labels | `POSITIVE`, `NEGATIVE` |
+| Optimizer | AdamW (via Trainer defaults) |
+| Metrics | Accuracy, F1 |
+ 
+---
+
+
+ ## Gradio UI Preview
+ 
+After training, the model is reloaded and served through a Gradio interface where you can type any movie review and get an instant sentiment prediction.
+
+
+## License
+ 
+This project is licensed under the [MIT License](LICENSE).
